@@ -2,14 +2,16 @@
 [project]
 
 # 需要更改发布到pypi的包名时改这里
-name = "pyproject-tmpl"
+name = "mylib-sdk"
 dynamic = ["version"]
 description = "template python project with necessary configurations"
 authors = [{ name = "xdewx", email = "present150608@sina.com" }]
 readme = "README.md"
 requires-python = ">=3.10"
 
-dependencies = []
+dependencies = [
+    "fastmcp>=2.14.0",
+]
 
 # 使用uv_build时
 # [build-system]
